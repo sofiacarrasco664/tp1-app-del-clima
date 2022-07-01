@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="img/icons/favicon-16x16.png">
+    <title>Sofia Carrasco DWN3AV PWA</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><h1>App Climatica</h1></a>
+              <form id="contact-form" class="d-flex" role="search">
+                <label for="search">
+                    <input  title="Search" id="search" value="" type="text" placeholder="Busca una ciudad" required />
+                </label>
+        
+                <button id="sendButton" type="button" class="btn btn-outline-success">Enviar</button>
+            </form>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div id="card">
+            <ul id="contenedor">
+                <li id="principal">
+                    <h2 id="ubicacion"></h2>
+                    <p id="fecha-actual"></p>
+                    <img id="icono-animado" src="" alt="" height="128" width="128">
+                    <p id="temperatura-descripcion"></p>
+                    <button id="inicio" type="button">Volver al inicio</button>
+                </li>
+                <li>
+                    <p id="temperatura-valor"></p>
+                    <ul>
+                        <li><p id="temp-max"></p></li>
+                        <li><p id="temp-min"></p></li>
+                        <li id="contenedor-sensacion-termica"><p id="sensacion-termica"></p></li>
+                    </ul>
+                </li>
+                <li id="detalles">
+                    <h3>Detalles</h3>
+                    <ul>
+                        <li>
+                            <h4>Humedad</h4>
+                            <p id="humedad"></p>
+                        </li>
+                        <li>
+                            <h4>Presión Atmosférica</h4>
+                            <p id="presion-atmo"></p>
+                        </li>
+                        <li>
+                            <h4>Veloc. del Viento</h4>
+                            <p id="viento-velocidad"></p>
+                        </li>
+                    </ul>
+                </li>
+        
+            </ul>
+        </div>
+    </main>
+
+    <script src="js/fetch.js"></script>
+</body>
+</html>
+

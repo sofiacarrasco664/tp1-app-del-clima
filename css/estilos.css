@@ -1,0 +1,192 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 20px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 0%;
+            margin: 0%;
+}
+
+body {
+    background: url(../img/paisaje_ilustrado.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+}
+
+header{
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    width: 100%;
+    top: 0;
+    background-color: #ffffff65;
+    z-index: 2;
+    box-shadow: 0 0 25px 0 rgb(0 0 0 / 20%);
+}
+h1 {
+    color: #fff;
+    font-size: 1em;
+    margin: 15px auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: 40px 0 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+h4 {
+    font-size: 1em;
+    margin: auto;
+    text-align: center;
+}
+
+ul li ul li {
+    text-align: left;
+    margin: 10px 0;
+}
+
+ul li:last-child ul li p{
+    margin: 20px;
+}
+
+ul li, ol li {
+    list-style-type: none;
+    margin: 10px auto;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin: 0%;
+}
+
+#temperatura-valor {
+    font-size: 5em;
+    vertical-align: middle;
+    font-weight: 300;
+}
+
+#temperatura-descripcion {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+#fecha-actual {
+    font-size: 0.8em;
+    color: #CDDBFF;
+    font-weight: 600;
+}
+
+#search {
+    border-radius: 15px;
+    border: none;
+    height: 30px;
+    padding: 10px 20px;
+    background-color: #CDDBFF;
+    margin: 0 5px;
+}
+
+#sendButton, #inicio {
+    border-radius: 30px;
+    border: none;
+    padding: 0 20px;
+    background-color: #ff8036;
+    color: #fff;
+    font-weight: 600;
+    margin: 0 10px;
+}
+
+#card {
+    background-color: #c3dfff68;
+    box-shadow: 0 0 25px 0 rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding: 2em;
+}
+
+#contenedor-sensacion-termica, #detalles {
+    display: block;
+}
+
+#detalles h3 {
+    border-bottom: 1px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: #CDDBFF;
+    border-style: solid;
+    padding-bottom: 15px;
+    font-weight: 400;
+}
+
+#detalles li {
+    margin: 0 5%;
+    text-align: center;
+}
+
+label {
+    margin: 0%;
+}
+
+#contenedor li:nth-child(2) ul li:first-child, #contenedor li:nth-child(2) ul li:nth-child(2){
+    display: inline-block;
+}
+
+/* Paleta de colores utilizada: https://coolors.co/ff8036-6084bb-0e1f56-02103e-cddbff */
+
+@media (min-width: 991px) {
+    #card {
+        width: 50%;
+        margin: 6% auto;
+    }
+  }
+
+@media (max-width: 990px) {
+    #card {
+        width: 85%;
+        margin: 10% auto;
+    }
+  }
+
+  @media (min-width: 550px) {
+    li {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    #contenedor > li:first-child, #contenedor > li:nth-child(2) {
+        width: 45%;
+    }
+    #temperatura-valor {
+        margin: 60px 60px 40px;
+    }
+  }
+
+  @media (max-width: 549px) {
+    li {
+        display: block;
+    }
+    #contenedor > li:first-child, #contenedor > li:nth-child(2) {
+        width: 100%;
+    }
+    #search {
+        width: 90%;
+    }
+
+    .navbar {
+        padding: 0%;
+    }
+
+    #temperatura-valor {
+        margin: 60px 0 40px;
+    }
+  }
